@@ -32,11 +32,14 @@
     }
   </script>
   <style>
+
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-       @font-face {
+
+    @font-face {
       font-family: "abril-display";
       src: url("/assets/fonts/Abril_Display_Bold.otf") format("truetype");
      }
+
 .icon {
   transition: transform 0.3s ease;
 }
@@ -54,24 +57,26 @@
   padding: 0;
 } 
   </style>
+
 </head>
 <body class="font-poppins">
  <!-- ----------hero-section -->
- <section class="bg-[url('assets/images/webp/hero-section-bg-img.webp')] bg-center bg-no-repeat bg-cover w-full h-[851px] flex items-center justify-center">
+ <section class="bg-[url('assets/images/webp/hero-section-bg-img.webp')] bg-center bg-no-repeat bg-cover w-full h-[851px] flex items-center justify-center max-md:relative">
     <div class="container flex flex-grow items-center justify-center">
         <header class="absolute top-6 left-6">
             <nav>
                 <a href="/"><img src="/assets/images/svg/logo.svg" alt="logo"></a>
             </nav>
         </header>
-        <div id="hero-content" class="flex items-center justify-between w-full max-lg:flex-col-reverse">
-            <div class="flex-grow max-lg:w-full max-lg:text-center flex flex-col justify-center">
+        <div id="hero-content" class="flex items-center justify-between w-full max-lg:flex-col-reverse gap-[55px]">
+            <div class="flex-grow max-lg:w-full max-lg:text-center flex flex-col justify-center max-sm:absolute bottom-[11%]">
                 <h1 class="font-abrilDisplay leading-[100%] max-w-[478px] font-bold text-[62px] text-white max-xl:text-5xl max-md:text-[47px]">Get AI funding for your store</h1>
                 <p class="font-medium text-[22px] text-white max-w-[408px] pt-6 max-sm:text-lg">AI technology that predicts, plans, and protects your cash flow.</p>
                 <button class="text-white mt-6 py-[10px] px-10 max-w-[179px] rounded-full border border-solid bg-[#4C57FF] border-[#4C57FF] transition-all ease-linear duration-200 hover:bg-white hover:text-[#4C57FF] text-base font-medium">Get funded</button>
             </div>
             <div class="flex-grow text-center max-lg:w-full">
-                <img src="/assets/images/png/hero-section-img.png" alt="hero-section-img" class="w-full max-w-[366px] mx-auto">
+                <img src="/assets/images/png/hero-section-img.png" alt="hero-section-img" class="w-full max-w-[366px] mx-auto max-md:hidden">
+                <img src="/assets/images/png/sm-data-img.png" alt="sm-data-img" class="w-full max-w-[192px] mx-auto md:hidden max-md:absolute right-0 top-[8%] max-sm:top-[27%]">
             </div>
         </div>
     </div>
@@ -91,12 +96,12 @@
             </div>
  </div>
  <!-- ----Ai evalution -->
- <section class="bg-[#EFECE6] py-[120px] max-2xl:py-24 max-xl:py-16 max-lg:py-10 max-md:py-6">
+ <section class="bg-[#EFECE6] py-[120px] max-2xl:py-24 max-xl:py-16 max-lg:py-10 max-md:py-6 overflow-x-hidden">
     <div class="container">
-        <div class="flex items-center justify-center mx-auto gap-[90px] max-lg:flex-col-reverse">
+        <div class="flex items-center justify-center mx-auto gap-[90px] max-lg:gap-10 max-md:gap-5 max-lg:flex-col-reverse">
             <div class="w-6/12 max-lg:w-full">
                 <img src="/assets/images/png/ai-evalution-img.png" alt="ai-evalution-img" class="w-full max-w-[570px] max-md:hidden">
-                <img src="/assets/images/png/sm-ai-evalution-img.png" alt="ai-evalution-img" class="w-full max-w-[422px] md:hidden">
+                <img src="/assets/images/png/sm-ai-evalution-img.png" alt="ai-evalution-img" class="w-full max-w-[422px] md:hidden translate-x-[40px]">
             </div>
             <div class="w-6/12 max-lg:w-full">
                 <div class="max-lg:flex max-lg:items-center max-lg:justify-center max-lg:flex-col">
